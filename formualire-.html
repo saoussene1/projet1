@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Formulaire de Commande</title>
+</head>
+<body>
+    <h1>Formulaire de Commande</h1>
+    <form action="confirmation.html" method="post">
+        <!-- Section: Informations Personnelles -->
+        <h2>Informations Personnelles</h2>
+        <label for="Nom">Nom :</label>
+        <input id="Nom" type="text" placeholder="Votre nom" required><br>
+
+        <label for="Prenom">Prénom :</label>
+        <input id="Prenom" type="text" placeholder="Votre prénom" required><br>
+
+        <label for="Email">Email :</label>
+        <input id="Email" type="email" placeholder="Votre email" required><br>
+
+        <label for="Numero">Téléphone :</label>
+        <input id="Numero" type="tel" placeholder="00-00-00-00-00"><br>
+
+        <label for="Adresse">Adresse de Livraison :</label>
+        <textarea id="Adresse" name="adresse" rows="3" cols="50" placeholder="Votre adresse complète" required></textarea><br>
+
+        <!-- Section: Détails de Commande -->
+        <h2>Détails de la Commande</h2>
+        <label for="Produit">Produit :</label>
+        <select id="Produit" name="produit" required>
+            <option value="">-- Sélectionnez un produit --</option>
+            <option value="Produit1">Produit 1</option>
+            <option value="Produit2">Produit 2</option>
+            <option value="Produit3">Produit 3</option>
+            <option value="Produit4">Produit 4</option>
+        </select><br>
+
+        <label for="Quantite">Quantité :</label>
+        <input id="Quantite" type="number" name="quantite" min="1" placeholder="Quantité" required><br>
+
+        <label for="Couleur">Couleur :</label>
+        <select id="Couleur" name="couleur">
+            <option value="">-- Sélectionnez une couleur --</option>
+            <option value="Rouge">Rouge</option>
+            <option value="Bleu">Bleu</option>
+            <option value="Vert">Vert</option>
+            <option value="Noir">Noir</option>
+            <option value="Blanc">Blanc</option>
+        </select><br>
+
+        <label for="Taille">Taille :</label>
+        <select id="Taille" name="taille">
+            <option value="">-- Sélectionnez une taille --</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select><br>
+
+
+        <!-- Section: Livraison -->
+        <h2>Options de Livraison</h2>
+        <input id="LivraisonStandard" type="radio" name="livraison" value="Standard" required>
+        <label for="LivraisonStandard">Standard (3-5 jours, gratuit)</label><br>
+
+        <input id="LivraisonExpress" type="radio" name="livraison" value="Express">
+        <label for="LivraisonExpress">Express (1-2 jours, 500 DA)</label><br>
+
+        <input id="LivraisonRetrait" type="radio" name="livraison" value="Retrait">
+        <label for="LivraisonRetrait">Retrait en Magasin</label><br>
+
+        <!-- Section: Mode de Paiement -->
+        <h2>Mode de Paiement</h2>
+        <input id="PaiementCarte" type="radio" name="paiement" value="Carte Bancaire" required>
+        <label for="PaiementCarte">Carte Bancaire</label><br>
+
+        <input id="PaiementEspeces" type="radio" name="paiement" value="Espèces">
+        <label for="PaiementEspeces">Espèces à la Livraison</label><br>
+
+        <input id="PaiementVirement" type="radio" name="paiement" value="Virement">
+        <label for="PaiementVirement">Virement Bancaire</label><br>
+
+        <input id="PaimenetBaridi-mob" type="radio" name="paiement" value="Baridi-mob">
+        <label for="PaimenetBaridi-mob">Baridi-mob</label><br>
+
+        <!-- Section: Validation -->
+        <h2>Important</h2>
+        <p>Veuillez vérifier les informations avant de valider votre commande.</p>
+        <button type="submit">Passer la Commande</button>
+        <button type="reset">Réinitialiser</button>
+    </form>
+</body>
+</html>
+
